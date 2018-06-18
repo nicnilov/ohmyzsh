@@ -18,7 +18,7 @@ function title {
 
   case "$TERM" in
     cygwin|xterm*|putty*|rxvt*|ansi)
-      print -Pn "\e]2;$2:q\a" # set window name
+      # print -Pn "\e]2;$2:q\a" # set window name
       print -Pn "\e]1;$1:q\a" # set tab name
       ;;
     screen*)
@@ -26,7 +26,7 @@ function title {
       ;;
     *)
       if [[ "$TERM_PROGRAM" == "iTerm.app" ]]; then
-        print -Pn "\e]2;$2:q\a" # set window name
+        # print -Pn "\e]2;$2:q\a" # set window name
         print -Pn "\e]1;$1:q\a" # set tab name
       else
         # Try to use terminfo to set the title

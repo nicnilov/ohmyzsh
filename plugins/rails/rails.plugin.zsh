@@ -47,6 +47,9 @@ alias rs='rails server'
 alias rsd='rails server --debugger'
 alias rsp='rails server --port'
 
+# Foreman aliases
+alias fs='foreman start -f Procfile.dev'
+
 # Rake aliases
 alias rdm='rake db:migrate'
 alias rdms='rake db:migrate:status'
